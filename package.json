@@ -1,0 +1,35 @@
+{
+    "name": "vscode-jug",
+    "displayName": "vscode-jug",
+    "description": "Provides syntax highlighting for Jug documents.",
+    "version": "0.0.1",
+    "author": "Zack Guard <zacharyguard@gmail.com>",
+    "repository": "https://github.com/z-------------/vscode-jug.git",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "jug",
+                "aliases": ["Jug", "jug"],
+                "extensions": [".jug"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "jug",
+                "scopeName": "source.jug",
+                "path": "./syntaxes/jug.tmLanguage.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.javascript": "javascript"
+                }
+            }
+        ]
+    }
+}

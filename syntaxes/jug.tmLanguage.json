@@ -1,0 +1,23 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "scopeName": "source.jug",
+    "name": "Jug",
+    "patterns": [
+        {
+            "begin": "<#jug",
+            "end": "#>",
+            "beginCaptures": {
+                "0": { "name": "keyword.other.namespace.jug.open" }
+            },
+            "endCaptures": {
+                "0": { "name": "keyword.other.namespace.jug.close" }
+            },
+            "contentName": "meta.embedded.block.javascript",
+            "patterns": [
+                {
+                    "include": "source.js"
+                }
+            ]
+        }
+    ]
+}
